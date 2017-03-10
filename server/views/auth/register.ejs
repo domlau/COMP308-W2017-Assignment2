@@ -1,0 +1,46 @@
+<!--Name: Dominic Lau 300766421
+    File name: register.ejs
+    Website name: Register
+    Description: Registration page -->
+<% include ../partials/header.ejs %>
+  <!--MAIN CONTENT  -->
+  <div class="body_container">
+  <!-- flash messages -->
+  <% if(messages.length > 0){ %>
+  <div class="alert alert-danger"> <%= messages %> </div>
+  <% } %>
+
+    <div class="row">
+      <div class="col-md-offset-3 col-md-5">
+        <h1 style="font-size:100px;text-align: center">Registration Page</h1>
+        <form method ="post">  
+            <fieldset class ="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" name="username" required autofocus/>
+            </fieldset>
+            <fieldset class ="form-group">
+                <label for="password">Password:</label>
+                <input type="passsword" class="form-control" name="password" required/>
+            </fieldset>
+            <fieldset class ="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email" required/>
+            </fieldset>
+            <fieldset class ="form-group">
+                <label for="displayName">Display Name:</label>
+                <input type="text" class="form-control" name="displayName" required/>
+            </fieldset>
+
+
+            <fieldset class="form-group text-right">
+                <input type="submit" class="btn btn-success" value="Register"/>
+                <a href="/">
+                    <input type="button" class="btn btn-warning value="Cancel">
+                </a>
+            </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <% include ../partials/footer.ejs%>
