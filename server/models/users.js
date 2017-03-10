@@ -12,4 +12,4 @@ let userSchema = mongoose.Schema({
 });
 
 //db = name of this file that represent the document structure
-module.exports = mongoose.model('user',userSchema);
+module.exports = mongoose.model('users',userSchema);

@@ -58,6 +58,13 @@
          <% } else { %>
            <li><a href="/contact"><i class="fa fa-phone fa-lg"></i> Contact</a></li>
          <% } %>
+
+         <% if(title == "Login") { %>
+           <li class="navbar_active"><a href="/business"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+         <% } else { %>
+           <li><a href="/business"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+         <% } %>
+
        </ul>
      </div><!-- /.navbar-collapse -->
    </nav>

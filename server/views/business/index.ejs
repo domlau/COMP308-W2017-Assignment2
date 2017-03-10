@@ -1,0 +1,35 @@
+<!--Name: Dominic Lau 300766421
+    File name: login.ejs
+    Website name: Login
+    Description: Form that lets user login with username and password -->
+
+<% include ../partials/header.ejs %>
+
+  <!--MAIN CONTENT  -->
+  <div class="body_container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-5">
+        <h1 style="font-size:100px;text-align: center">
+            <%= title %>
+        </h1>
+        <br>
+        
+        <form>
+            <div class="form-group">
+              <label for="usernameInputField">Username</label>
+              <input type="email" class="form-control" id="usernameInputField" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="passwordInputField">Password</label>
+              <input type="password" class="form-control" id="passwordInputField" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+        </form>
+
+
+        
+     </div>
+   </div>
+  </div>
+
+  <% include ../partials/footer.ejs%>

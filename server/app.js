@@ -9,21 +9,22 @@ let bodyParser = require('body-parser');
 //add mongoose module
 let mongoose = require('mongoose');
 
-//Mongoose URI
-let URI = "mongodb://root:admin@ds123400.mlab.com:23400/assignment2";
+//establish URI
+let config = require('./config/db');
+
+mongoose.connect(process.env.URI || config.URI);
+let db = mongoose.connection;
 //establish connection to mongo db and use assignment 2 database
-mongoose.connect(URI, (err) => 
-{
-  if(err) {
-    console.log("Error connecting to database");
-  }
-  else
-  {
-    console.log("Connected to Mongodb");
-  }
+db.on('error',console.error.bind(console,'connection error'));
+db.once('open',() => {
+  console.log("Connected to Mongodb");
 });
 
+
+//defining the page routers
 let index = require('./routes/index');
+//routes for login and business
+let business = require('./routes/business');
 
 
 
@@ -40,10 +41,11 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../client')));
 
 //Wildcard; this will go to index page
 app.use('/', index);
+app.use('/business',business);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
