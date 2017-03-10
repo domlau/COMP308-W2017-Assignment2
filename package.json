@@ -1,5 +1,5 @@
 {
-  "name": "assignment1",
+  "name": "assignment2",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -24,7 +24,7 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/domlau/COMP308_W2017_Assignment1.git"
+    "url": "git+https://github.com/domlau/COMP308_W2017_Assignment2.git"
   },
   "keywords": [
     "NodeJS",
@@ -33,7 +33,7 @@
   "author": "Dominic Lau",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/domlau/COMP308_W2017_Assignment1/issues"
+    "url": "https://github.com/domlau/COMP308_W2017_Assignment2/issues"
   },
-  "homepage": "https://github.com/domlau/COMP308_W2017_Assignment1#readme"
+  "homepage": "https://github.com/domlau/COMP308_W2017_Assignment2#readme"
 }
