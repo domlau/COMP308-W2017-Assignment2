@@ -6,6 +6,23 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
+//add mongoose module
+let mongoose = require('mongoose');
+
+//Mongoose URI
+let URI = "mongodb://root:admin@ds123400.mlab.com:23400/assignment2";
+//establish connection to mongo db and use assignment 2 database
+mongoose.connect(URI, (err) => 
+{
+  if(err) {
+    console.log("Error connecting to database");
+  }
+  else
+  {
+    console.log("Connected to Mongodb");
+  }
+});
+
 let index = require('./routes/index');
 
 
