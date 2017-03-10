@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-let app = require('./app');
-let debug = require('debug')('assignment1:server');
+let app = require('./server/app');
+let debug = require('debug')('assignment2:server');
 let http = require('http');
 
 /**
