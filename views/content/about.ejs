@@ -1,0 +1,38 @@
+<!--Name: Dominic Lau 300766421
+    File name: about.ejs
+    Website name: About me
+    Description: About me webpage -->
+
+<% include ../partials/header.ejs %>
+  <!--MAIN CONTENT  -->
+  <div class="body_container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6">
+        <h1 style="font-size:100px;text-align: center">
+          <%= title %>
+        </h1>
+      </div>
+      
+      <div class = "col_body">
+      <div class = "col-md-offset-3 col-md-6">
+      <dl id= "about_me_info">
+        <dt style="font-size:30px">Education background</dt>
+        <dd>Software Engineering Technology Co-op Program at Centennail College Progress. 2013 - Current</dd>
+        <dd>Honours Bachelor of Science (Life Science) at University of Toronto. 2007 - 2012</dd>
+        <dt style="font-size:30px">Technical Skills</dt>
+        <dd>C#, Java, HP UFT Automation, Javascript, MS Office Tools, Agile metholodgy, Android</dd>
+        <dt style="font-size:30px">Hobbies</dt>
+        <dd>Hobbies, Basketball, Video games, Outdoors</dd>
+      </dl>
+      </div>
+      <div class ="col-md-offset-3 col-md-6">
+      <div class = "profile_column">
+      <img src="../Assets/images/profile_picture.jpg" alt="picture of Dominic" class= "profile_picture">
+      </div>
+      </div>
+      </div>
+      
+      </div>
+    
+  </div>
+<% include ../partials/footer.ejs%>

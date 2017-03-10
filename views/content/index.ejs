@@ -1,0 +1,30 @@
+<!--Name: Dominic Lau 300766421
+    File name: index.ejs
+    Website name: Welcome to Dominic Portfolio Site
+    Description: The main page -->
+
+<!-- calls partial header.ejs -->
+<% include ../partials/header.ejs %>
+  <!--MAIN CONTENT  -->
+  <div class="body_container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6">
+        <h1 style="font-size:80px;text-align: center">
+          <%= title %>
+        </h1>      
+      </div>
+      <div class="col-md-offset-4 col-md-4">
+      <div class="quote_section">
+        <p class = "intro">
+        <i class = "fa fa-quote-left fa-3x fa-pull-left "aria-hidden="true"></i>
+        The number one benefit of information technology is that it empowers people to do what they want to do.
+        It lets people be creative. It lets people be productive. It lets people learn things they didn't think they could
+        learn before, and so in a sense it is all about potential. - Steve Ballmer
+        <i class = "fa fa-quote-right fa-3x fa-pull-right"></i>
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- calls partials footer.ejs -->
+<% include ../partials/footer.ejs%>

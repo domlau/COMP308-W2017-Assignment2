@@ -1,0 +1,96 @@
+/*Name: Dominic Lau 300766421
+    File name: app.css
+    Description: Custom css page.
+*/
+
+/* */
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(../Assets/images/waterfall.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
+   opacity:0.9;
+   padding-bottom: 70px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.body_container {
+  margin-right:auto;
+  margin-left:auto;
+  height: 1200px;
+  background-color: black;
+  opacity:1;
+  color:white;
+}
+
+.navbar-text{
+  float:right;
+}
+
+.navbar{
+  background-color: lightcyan;
+  border-color: #4c5147;
+}
+
+.collapse {
+  background-color: lightcyan;
+}
+.navbar-toggle{
+  background-color: grey;
+}
+.icon-bar{
+  background-color: black;
+}
+.col_body{
+  margin: 100px;
+  padding: 75px;
+}
+.list_contactme{
+  margin:300px;
+  padding: 75px;
+  position: relative;
+}
+.quote_section{
+  margin:50px;
+  padding:30px;
+}
+.profile_column{
+  margin:100px;
+}
+.profile_picture{
+  height: 500px;
+  width: 340px;
+}
+.android{
+  text-align: center;
+  font-size:large;
+}
+.portfolio{
+  text-align: center;
+  font-size:large;
+}
+.casestudy{
+  text-align: center;
+  font-size:large;
+}
+
+.dl_list_service{
+  text-align: center;
+}
+
+.list_service_style{
+  font-size:xx-large;
+}
+.dl_list_contactme{
+  text-align: center;
+}
+
+.intro{
+  font-size:x-large;
+}
