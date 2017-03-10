@@ -14,7 +14,30 @@
         </h1>
         <br>
         
-        
+        <table>
+            <tr class="row">
+                <td class="col">Contact Name</td>
+                <td class="col">Contact Number</td>
+                <td class="col">Email Address</td>
+                <td class="col"></td>
+                <td class="col"></td>
+            </tr>
+            <% for (let count = 0; count < users.length; count++) { %>
+            <tr>
+                <td class="text-center"><%= users[count].userName %></td>
+                <td class="text-center"><%= users[count].password %></td>
+                <td class="text-center"><%= users[count].email %></td>
+                <td class="text-center">
+                    <a href="/users/<%=users[count]._id %>" class="btn btn-primary">
+                    <i class="fa fa-pencil-square-o"></i>Edit</a>
+                </td>
+                <td class="text-center">
+                    <a href="/users/<%=users[count]._id %>" class="btn btn-primary">
+                    <i class="fa fa-trash-o"></i>Delete</a>
+                </td>
+
+            </tr>
+        </table>
 
 
         
