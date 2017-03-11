@@ -7,7 +7,7 @@ let passport = require('passport');
 let UserModel = require('../models/users');
 let User = UserModel.User;
 
-//define the contact models
+//define the contact model
 let contact = require('../models/contacts');
 
 //function to check for user authentication
@@ -120,7 +120,7 @@ router.post('/register', (req,res,next) => {
         if(err.name == 'UserExistsError') {
           req.flash('registerMessage','Registration Error: User already exists');
         }
-        return res.render('/auth/register',{
+        return res.render('auth/register',{
           title: 'Register',
           contacts: '',
           messages: req.flash('registerMessage'),

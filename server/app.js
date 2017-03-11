@@ -52,7 +52,7 @@ app.use(express.static(path.join(__dirname, '../client')));
 
 //setup session
 app.use(session({
-  secret:"SomeSecret",
+  secret:"Secret",
   saveUninitialized: true,
   resave:true
 }));
