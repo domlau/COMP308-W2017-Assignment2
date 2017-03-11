@@ -40,5 +40,10 @@
   "bugs": {
     "url": "https://github.com/domlau/COMP308_W2017_Assignment2/issues"
   },
-  "homepage": "https://github.com/domlau/COMP308_W2017_Assignment2#readme"
+  "homepage": "https://github.com/domlau/COMP308_W2017_Assignment2#readme",
+  "devDependencies": {
+    "@types/passport": "^0.3.3",
+    "@types/passport-local": "^1.0.29",
+    "@types/passport-local-mongoose": "^4.0.8"
+  }
 }

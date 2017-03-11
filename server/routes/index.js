@@ -77,13 +77,13 @@ router.get('/login', (req,res,next) => {
     });
     return;
   } else {
-    return res.redirect('/contacts');
+    return res.redirect('/business');
   }
 });
 
 /*POST /login - process the login authentication */
 router.post('/login',passport.authenticate('local',{
-  successRedirect:'/contacts',
+  successRedirect:'/business',
   failureRedirect:'/login',
   failureFlash:'Incorrect Login'
 }));
@@ -101,7 +101,7 @@ router.get('/register', (req,res,next) => {
     });
     return;
   } else {
-    return res.redirect('/contacts');
+    return res.redirect('/business');
   }
 });
 
@@ -129,7 +129,7 @@ router.post('/register', (req,res,next) => {
       }
       //when successful registered
       return passport.authenticate('local')(req,res,() =>{
-        res.redirect('/contacts');
+        res.redirect('/business');
       });
     });
 });

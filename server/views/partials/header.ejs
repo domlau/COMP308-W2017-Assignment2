@@ -59,11 +59,21 @@
            <li><a href="/contact"><i class="fa fa-phone fa-lg"></i> Contact</a></li>
          <% } %>
 
-         <% if(title == "Login") { %>
-           <li class="navbar_active"><a href="/business"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-         <% } else { %>
-           <li><a href="/business"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-         <% } %>
+         <% if (displayName) { %>
+          <% if(title == "Contacts") { %>
+            <li class="active"><a href="/business"><i class="fa fa-address-book-o"></i></a></li>
+          <% } else { %> 
+          <li><a href="/business"><i class="fa fa-address-book-o"></i></a></li>
+          <% } %>
+          <% } %>
+
+          <% if(displayName) { %> 
+            <li class="navbar-text"><i class="fa fa-user-o"></i>Welcome, <%= displayName %></li>
+            <li> <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+          <% } else { %>
+          <li><a href="/login"><i class="fa fa-sign-in"></i>Login</a></li> 
+          <% } %>
+         
 
        </ul>
      </div><!-- /.navbar-collapse -->

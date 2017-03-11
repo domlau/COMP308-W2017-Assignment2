@@ -22,25 +22,22 @@
                 <td class="col"></td>
                 <td class="col"></td>
             </tr>
-            <% for (let count = 0; count < users.length; count++) { %>
+            <% for (let count = 0; count < contacts.length; count++) { %>
             <tr>
-                <td class="text-center"><%= users[count].userName %></td>
-                <td class="text-center"><%= users[count].password %></td>
-                <td class="text-center"><%= users[count].email %></td>
+                <td class="text-center"><%= contacts[count].contactName %></td>
+                <td class="text-center"><%= contacts[count].contactNumber %></td>
+                <td class="text-center"><%= contacts[count].emailAddress %></td>
                 <td class="text-center">
-                    <a href="/users/<%=users[count]._id %>" class="btn btn-primary">
+                    <a href="/contacts/<%=contacts[count]._id %>" class="btn btn-primary">
                     <i class="fa fa-pencil-square-o"></i>Edit</a>
                 </td>
                 <td class="text-center">
-                    <a href="/users/<%=users[count]._id %>" class="btn btn-primary">
+                    <a href="/contacts/<%=contacts[count]._id %>" class="btn btn-primary">
                     <i class="fa fa-trash-o"></i>Delete</a>
                 </td>
             </tr>
             <% } %>
         </table>
-
-
-        
      </div>
    </div>
   </div>

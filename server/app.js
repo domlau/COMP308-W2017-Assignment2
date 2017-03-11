@@ -10,8 +10,8 @@ let bodyParser = require('body-parser');
 let session = require('express-session');
 let passport = require('passport');
 let passportlocal = require('passport-local');
-let LocalStrategy = passportocal.Strategy;
-let flash = require('connect-flash')
+let LocalStrategy = passportlocal.Strategy;
+let flash = require('connect-flash');
 
 //add mongoose module
 let mongoose = require('mongoose');
@@ -30,7 +30,7 @@ db.once('open',() => {
 
 //defining the page routers
 let index = require('./routes/index');
-//routes for login and business
+//routes for business
 let business = require('./routes/business');
 
 
