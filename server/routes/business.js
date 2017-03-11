@@ -12,9 +12,9 @@ let contact = require('../models/contacts');
 function requireAuth(req,res,next) {
   //check for user logged in
   if(!req.isAuthenticated()) {
-    return res.redirect('auth/login');
+    return res.redirect('/login');
   }
-  next;
+  next();
 }
 
 /* GET contact list page. READ */
@@ -39,7 +39,7 @@ router.get('/add', requireAuth, (req,res,next) => {
   res.render('/business/details', {
     title:"Add a new Contact",
     contacts:'',
-    displayName: req.user ? req.user.displayName: ''
+    displayName: req.user.displayName
   });
 });
 
@@ -74,7 +74,7 @@ router.get('/:id', requireAuth, (req,res,next) => {
         res.render('/business/details', {
           title:"Contact Details",
           contacts:contacts,
-          displayName: req.user ? req.user.displayName: ''
+          displayName: req.user.displayName
         });
       }
     });
